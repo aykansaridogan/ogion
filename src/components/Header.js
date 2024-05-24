@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { ThemeProvider, createGlobalStyle, keyframes } from 'styled-components';
@@ -61,7 +62,7 @@ const HeaderContainer = styled.header`
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
-  transform: translateZ(50px);
+  padding-left: 20px; /* Logo için sola padding ekle */
 `;
 
 const LogoImage = styled.img`
@@ -134,6 +135,9 @@ const ThemeToggle = styled.div`
   cursor: pointer;
   margin-left: 5px;
 `;
+
+
+
 
 const Header = () => {
   const [theme, setTheme] = useState(lightTheme);
