@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { ThemeProvider, createGlobalStyle, keyframes } from 'styled-components';
 import { FaSun, FaMoon, FaSearch } from 'react-icons/fa';
+import './Header.css';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -48,28 +49,26 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px;
   background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.color};
-  transition: background-color 0.3s ease;
-
-  a {
-    color: inherit;
-    text-decoration: none;
-    margin: 0 10px;
-  }
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  perspective: 1000px;
 `;
 
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
+  transform: translateZ(50px);
 `;
 
 const LogoImage = styled.img`
   height: 40px;
   margin-right: 10px;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   animation: ${rotate} 10s linear infinite;
 `;
 
@@ -83,6 +82,7 @@ const LogoText = styled.h1`
 const Nav = styled.nav`
   display: flex;
   align-items: center;
+  transform: translateZ(50px);
 
   .dropdown {
     position: relative;
@@ -108,7 +108,8 @@ const Nav = styled.nav`
 const SearchAndThemeContainer = styled.div`
   display: flex;
   align-items: center;
-`; 
+  transform: translateZ(50px);
+`;
 
 const SearchContainer = styled.div`
   display: flex;
@@ -131,7 +132,7 @@ const SearchButton = styled.button`
 
 const ThemeToggle = styled.div`
   cursor: pointer;
-  margin-left: 5px; 
+  margin-left: 5px;
 `;
 
 const Header = () => {

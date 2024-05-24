@@ -1,0 +1,105 @@
+.HeaderContainer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .LogoContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .LogoImage {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    animation: rotate 10s linear infinite;
+  }
+  
+  .LogoText {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    margin: 0;
+    animation: rainbowColor 6s ease infinite;
+  }
+  
+  .Nav {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .Nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .Nav a:hover {
+    color: #ccc;
+  }
+  
+  .Dropdown {
+    position: relative;
+    padding: 10px;
+  }
+  
+  .Dropdown:hover .DropdownContent {
+    display: block;
+  }
+  
+  .DropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #eee;
+    padding: 5px;
+    border-radius: 3px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .SearchAndThemeContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .SearchContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .SearchInput {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  .SearchButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  .ThemeToggle {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .ThemeToggle svg {
+    font-size: 20px;
+    color: #fff;
+  }
