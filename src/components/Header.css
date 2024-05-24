@@ -31,7 +31,7 @@
   .Nav {
     display: flex;
     align-items: center;
-    margin-left: 6px;
+    margin-left: 20px;
   }
   
   .Nav a {
@@ -96,7 +96,7 @@
   
   .ThemeToggle {
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   
   .ThemeToggle svg {
