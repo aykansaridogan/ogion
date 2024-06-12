@@ -30,20 +30,4 @@ h3 {
 .slider-container {
   max-width: 600px; /* İstenilen genişliğe göre ayarlayın */
   margin: auto; /* Sayfanın ortasına yerleştirmek için */
-  position: relative; /* Reklamların yerleştirileceği alan için */
-}
-
-.ad-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.ad-left,
-.ad-right {
-  width: 150px; /* Reklamların genişliğini ayarlayın */
-  height: 150px; /* Reklamların yüksekliğini ayarlayın */
 }
