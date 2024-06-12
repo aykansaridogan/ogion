@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Slider.css";
 import banner1 from "../banner3.png";
 import banner2 from "../valiz.png";
-import banner3 from "../parfüm.png";
+import banner3 from "../odaparfüm.png";
 
 const Sliders = () => {
   // Rastgele fotoğraf URL'leri için bir dizi oluştur
