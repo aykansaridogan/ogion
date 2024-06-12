@@ -23,8 +23,7 @@ h3 {
 
 .slider-image {
   width: 100%;
-  height: auto; /* Height'ı otomatik ayarlayarak en boy oranını korur */
-  object-fit: cover; /* Görüntüleri alanı dolduracak şekilde kırpar */
+  height: 200px; /* Height'ı otomatik ayarlayarak en boy oranını korur */
 }
 
 .slider-container {
