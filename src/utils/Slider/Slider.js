@@ -3,13 +3,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Slider.css";
-import banner1 from "../banner3.png";
-import banner2 from "../valiz.png";
-import banner3 from "../odaparfüm.png";
+import banner1 from "../../banner3.png";
+import banner2 from "../../valiz.png";
+import banner3 from "../../odaparfüm.png";
 
 const Sliders = () => {
   // Rastgele fotoğraf URL'leri için bir dizi oluştur
-  const imageUrls = [banner1, banner2, banner3, banner1];
+  const imageUrls = [banner1, banner2, banner3];
 
   const settings = {
     dots: true,
@@ -18,7 +18,9 @@ const Sliders = () => {
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 3000, // Otomatik geçiş süresini artırdık
+    fade: true, // Geçiş efektini "fade" olarak ayarladık
+    pauseOnHover: true, // Fare üzerine gelindiğinde otomatik geçişi durdur
   };
 
   return (

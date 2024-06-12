@@ -21,13 +21,6 @@ const App = () => {
     };
   }, []);
 
-  useEffect(() => {
-    // Reklam birimlerini yükle
-    if (window.adsbygoogle) {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    }
-  }, []);
-
   return (
     <Router>
       <Header />
@@ -49,6 +42,7 @@ const App = () => {
             data-ad-format="auto"></ins>
         </div>
       </div>
+      
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />

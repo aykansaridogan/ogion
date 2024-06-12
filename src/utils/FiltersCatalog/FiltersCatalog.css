@@ -1,0 +1,62 @@
+.active {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filter-buttons {
+  margin-bottom: 10px;
+  padding-left: 20px; /* Add padding to the left of the button container */
+}
+
+.filter-buttons button {
+  margin-right: 10px; /* Butonlar arasına sağ yönde boşluk ekler */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding-left: 10px; /* Add padding to the left of each button */
+}
+
+.filter-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px; /* Ürün kartları arasına boşluk ekler */
+  padding-left: 20px; /* Add padding to the left of the product list */
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 10px; /* Add padding to each product item */
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.product-info h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.product-info p {
+  font-size: 14px;
+  margin: 0;
+}
