@@ -4,10 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Slider.css";
 import banner1 from "../banner3.png";
+import banner2 from "../valiz.png";
 
 const Sliders = () => {
   // Rastgele fotoğraf URL'leri için bir dizi oluştur
-  const imageUrls = [banner1, banner1, banner1, banner1];
+  const imageUrls = [banner1, banner2, banner1, banner1];
 
   const settings = {
     dots: true,
